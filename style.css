@@ -1,0 +1,752 @@
+body {
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+ html {
+    /*overflow-y: hidden; */
+} 
+
+.container {
+    max-width: 1020px;
+    margin: 0 auto;
+    overflow-y: hidden;
+}
+
+/*HEADER*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.firstbar {
+    background: url(./assets/img/Layer\ 25\ copy.png);
+    background-size: cover;
+    min-height: 567px;
+    position: relative;
+}
+
+.h1 {
+    display: flex;
+}
+
+.logo {
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 41px;
+    font-family: "Lucida Sans",sans-serif;
+    font-style: italic;
+    margin-top: 52px;
+    font-weight: 25;
+    margin-left: 4px;
+    margin-bottom: 0;
+}
+
+/*NAV*/
+
+.menu {
+    height: 41px;
+    background-image: linear-gradient(0deg, #f5c505 0%, #f5c505 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: -4px -4px rgba(245, 197, 5, 0.27), -8px -8px 1px rgba(245, 197, 5, 0.27);
+    width: 412px;  
+}
+
+.menu li:not(:last-child) {
+    border-right: 1px solid #9b7d08;
+    height: 41px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigation ul li { 
+    display: flex;
+    justify-content: center;
+    list-style-type: none; 
+    min-width: 109px;
+    padding-right: 17px;
+}
+
+.navigation ul li a { 
+    text-decoration: none;
+    font-size: 17px;
+    letter-spacing: 0px;
+    color: #9b7d08;
+    font-family: 'Segoe WP',sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:41px;
+    cursor: pointer;
+}
+
+.navigation ul li a:hover { 
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+ 
+}
+
+.first_li a {
+    min-width: 109px;
+    margin-left: -13px;
+}
+
+.second_li a {
+    min-width: 96px;
+}
+
+.img_second_li {
+    margin-left: -4px;
+}
+
+.logo3 a {
+    display: flex;
+    width: 109px;
+    justify-content: space-between;
+}
+
+.navigation {
+    padding-top: 54px;
+    width: 452px; 
+}
+
+.h1 .logo1 {
+    margin-top: 11px;
+    margin-left: -1px;
+}
+
+.first_li_mobile, .second_li_mobile, .logo3_mobile{
+    display: none;
+}
+
+/*VIDEO*/
+
+.video_div .video_desktop {
+    object-fit: cover;
+    margin-left: 68px;
+    margin-top: -6px;
+    width: 89%;
+} 
+
+.video_div .video_mobile {
+    display: none;
+}
+
+.first_banner {
+    display: flex;
+    margin-left: -58px;
+    margin-top: 48px;
+    position: relative;
+}
+
+.text {
+    text-transform: uppercase;
+    margin-top: 67px;
+    margin-left: 39px;
+    font-size: 63px;
+    letter-spacing: 1px;
+    color: #f5c506;
+    font-family: "Asap";
+    font-weight: 400;
+    text-align: center;
+   
+}
+
+.text p {
+    margin: 1px;
+    padding: 0;
+}
+
+.minimal {
+    margin-left: 11px;
+    margin-top: 4px;
+    color: #FFF;
+    letter-spacing: 0.5px;
+}
+.cool {
+    margin-left: -7px;
+    letter-spacing: 0.5px;
+}
+
+/*BUTTON*/
+
+.btn {
+    width: 32px;
+    height: 57px;
+    background-color: #f5c506;
+    border: 0;
+    overflow: hidden;
+}
+
+.btn_left {
+    top: 53%;
+    left: 1px;
+    position: absolute;
+    display: flex;
+    
+}
+.btn_right {
+    top: 53%;
+    right: 1px;
+    position: absolute;
+    
+}
+
+/*SECTION WITH LOGOS*/
+
+.info {
+    background: url(./assets/img/Layer\ 7.png);
+    height: 209px;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 0px;
+    height: 209px;
+}
+
+.logos div>p {
+    text-transform: uppercase;
+    font-size: 27px;
+    color: #000000;
+    font-family: "Segoe UI";
+    font-weight: 300;
+    
+}
+
+.img_cloud_mobile, .img_pen_mobile, .img_airplane_mobile {
+    display: none;
+}
+
+.cloud_logo, .pen_logo, .airplane_logo {
+    text-align: center;
+    min-width: 33%;
+    height: 100%;
+    border-left: 1px solid #d4d4d4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.airplane_logo {
+    border-right: 1px solid #d4d4d4;
+}
+
+.cloud_logo>p, .pen_logo>p {
+    margin: 11px 8px 32px 28px;
+    letter-spacing: 0.3px;
+}
+
+.airplane_logo p {
+    margin: 11px 8px 31px -6px;
+}
+
+.cloud_logo img{
+    padding-right: 7px;
+}
+
+.pen_logo img{
+    padding-left: 23px;
+    padding-bottom: 3px;
+}
+
+.airplane_logo img{
+    padding-right: 21px;
+}
+
+/*SECTION WITH SLIDE*/
+
+.yellow_section {
+    background: url(./assets/img/Layer\ 24.png);
+    min-height:507px; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text_in_yellow_section p{
+    margin-top: 0;
+    text-transform: uppercase;
+    width: 918px;
+    height: 38px;
+    font-size: 37px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "PT Sans";
+    font-weight: 400;
+    padding-top: 35px;
+    word-spacing: 3.5px;
+}
+
+.orange_slide {
+    background-color: #ec9e03;
+    min-width: 33%;
+    height: 234px;
+    position: relative
+}
+
+.orange_slide p {
+    font-size: 29px;
+    line-height: 38px;
+    color: #ffffff;
+    font-family: "Segoe WP";
+    font-weight: 300;
+    padding: 17px 10px 22px 29px;
+    margin: 0 0px 0px 1px;
+    letter-spacing: 0.3px;
+}
+
+.first_part_slide {
+    display: flex;
+    width: 655px;;
+}
+
+.slide {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.video_aladin_mobile {
+    display: none;
+}
+
+.plus1 {
+    position: absolute;
+    top: 207px;
+    left: 91%;
+    border: none;
+    background-color: #ed9e03;
+}
+
+.plus2 {
+    position: absolute;
+    top: 207px;
+    left: 301px;
+    border: none;
+    background-color: #ed9e03;
+}
+
+.slide_twitter {
+    background-color: #ec9e03;
+    min-width: 330px;
+    height: 234px;
+    position: relative;  
+}
+
+.bird {
+    position: absolute;
+    top: 59px;
+    left: 81px;
+}
+
+.messages {
+    display: none;
+}
+
+.tweeter_chat {
+    display: none;
+}
+
+.text_in_twitter{
+    font-size: 25px;
+    letter-spacing: 0px;
+    line-height: 38px;
+    color: #ffffff;
+    font-family: "Segoe WP";
+    font-weight: 300;
+    position: absolute;
+    top: 11px;
+    left: 284px;
+}
+
+.april{
+    margin-top: -2px;
+}
+
+.rectangle{
+    margin-top: 38px;
+    margin-left: 72px;
+}
+
+.rectangle_orange {
+    position: relative;
+    bottom: 20px;
+    left: 247px;
+}
+
+/*SECTION WITH DEVICES*/
+
+.section_devices {
+    background: url(./assets/img/Layer\ 32.png);
+    min-height:495px; 
+}
+
+.devices {
+    position: relative;
+}
+.yellowLogo {
+    position: absolute;
+    top: -41px;
+    left: -22px;
+}
+
+.text_in_grey_section {
+    padding-left: 6px;
+}
+.text_in_grey_section p {
+    margin: 0 auto;
+    padding-top: 38px;
+    pading-left: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 918px;
+    max-height: 130px;
+    font-size: 43px;
+    letter-spacing: 0.5px;
+    color: #f5c506;
+    font-family: "PT Sans";
+
+}
+
+.info_in_grey_section {
+    display:flex;
+    justify-content: space-between;
+    padding-top: 49px;
+    padding-left: 19px;
+}
+
+.list_grey ul {
+    margin-top: 48px;
+    margin-left: 72px;
+    flex-direction: column;
+    display: flex;
+    min-height: 212px;
+    justify-content: space-between;
+    padding-left: 6px;  
+}
+
+
+.list_grey ul li {
+    font-size: 22px;
+    color: #a9a9a7;
+    font-family: "Open Sans";
+    font-weight: 400;
+    list-style: none;
+    display: list-item;
+    display: flex;
+    
+}
+.list_grey ul li::before {
+    content: url(./assets/img/Ellipse\ 4.svg);
+    padding-right: 20px;
+}
+
+/*FOOTER*/
+
+.footer {
+    min-height:65px; 
+    box-shadow: -0.105px -2.998px 5px rgba(0,0,0,0.75);
+    background-color: #4c4c4c;
+}
+.logo_footer {
+    padding-top: 5px;
+}
+.logo_footer_mobile {
+    display: none;
+}
+
+
+@media screen and (max-width: 1299px) {
+    .firstbar {
+        background: url(./assets/img/Layer\ 25\ copy.png);   
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .text,.btn,.list_grey{
+        display: none; 
+    }
+    .devices{
+        margin: 0 auto;
+    }
+    .video_div{
+        margin:0 auto;
+    }
+    .video_div .video_desktop {
+        display: none;
+    } 
+    
+    .video_div .video_mobile {
+        display: block;
+    }
+    .first_banner {
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .menu{
+        margin: 0;
+    }
+    .firstbar{
+        min-height: 100%;
+    }
+    .rectangle, .april, .text_in_twitter, .plus2, .text_in_yellow_section {
+        display: none;
+    }
+    .slide {
+        display: block;
+    }
+    .first_part_slide {
+        width: 100%;
+        justify-content: space-around;
+        margin: 10px 0 5px 0;
+    }
+    .slide_twitter {
+        background-color: #f5c507;
+        display: flex;
+        position: relative;
+    }
+    .orange_slide {
+        width: 298px;
+    }
+    .video_aladin_mobile {
+        display: block;
+    }
+    .video_aladin {
+        display: none;
+    }
+    .tweeter_chat {
+        display: flex;
+        position: absolute;
+        top: 7%;
+        left: 50%;
+        height: 87%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .form_for_twitter {
+        display: inline-block;
+        width: 100%;
+        height: 30px;
+    }
+    .messages {
+        margin-top: 7px;
+        display: flex;
+        flex-direction: column;
+        height: 155px;
+        justify-content: space-between;
+    }
+    .yellow_section {
+        min-height: 100%;
+    }
+    .message_in_tweet {
+        width: 201px;
+        height: 27px;
+        border-radius: 10px 0 0 10px;
+        border: 1px solid rgba(0,0,0,0.15);
+        margin-left: 17px;
+    }
+    .submit {
+        width: 68px;
+        font-size: 15px;
+        letter-spacing: 0px;
+        color: #ffffff;
+        font-family: "Arial";
+        background-color: #e4a321;
+        height: 29px;
+        border-radius: 0 10px 10px 0;
+        border: 1px solid rgba(0,0,0,0.15);
+    }
+
+
+
+
+
+
+}
+
+@media screen and (max-width: 776px){
+    .menu{
+        box-shadow: none;
+    }
+    .logo{
+        font-size: 4.8vw;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+/*HEADER*/
+
+    .firstbar {
+        background: none;
+    }
+    .h1 .logo1 {
+        width: 43px;
+        height: 40px;
+        margin-top: 10px;
+        margin-left: 11px;
+    }
+    .h1 {
+        background-color: #41413f;
+        height: 61px;
+        width: 185px;
+    }
+    .logo {
+        font-size: 20px;
+        margin-top: 22px;
+        width: 100%;
+    }
+    .navigation {
+     padding-top: 0;
+     height: 61px; 
+     width: 455px;
+    }
+    .menu {
+        height: 61px;
+        width: 100%; 
+        margin: 0;
+        padding: 0; 
+    }
+    .video_div, .video_mobile {
+        width:100%;
+    }
+
+/*NAV*/
+
+    .first_li_mobile, .second_li_mobile, .logo3_mobile {
+        display: inline-block;
+    }
+    .img_first_li, .img_second_li, .img_logo3 {
+        display: none;
+    }
+    .navigation .menu li {
+        height: 100%;
+        align-items: center;
+        padding-right: 0;
+    }
+    .navigation ul li a {
+        font-size: 19px; 
+    }
+    .menu .first_li {
+        width: 35%;
+    }
+    .menu .second_li {
+        width: 24%;
+    }
+    .second_li a {
+        margin-right: 31%;
+    }
+    .first_li a {
+        width: 71%;
+    }
+    .first_li_mobile {
+        margin-left: -12px;  
+    }
+    .logo3_mobile { 
+        margin-left: -15px;
+    }
+
+    /*SECTION WITH LOGOS*/
+
+    .info {
+        background: url(./assets/img/Layer\ 27.png); 
+        position: relative;
+        top: -10px;
+        height: 171px;
+    }
+    .white_background {
+        background: url(./assets/img/Layer\ 27.png); 
+        position: relative;
+        top: 5px;
+        height: 171px;
+    }
+    .cloud_logo, .pen_logo, .airplane_logo {
+        border: none;  
+        height: auto;
+    }
+    .img_cloud_mobile, .img_pen_mobile, .img_airplane_mobile {
+        display: block;
+    }
+    .cloud, .pen, .airplane {
+        display: none;
+    }
+    .logos div>p {
+        font-size: 23px;
+    }
+    .img_cloud_mobile {
+        margin-left: -29px;
+        margin-top: -4px;
+    }
+    .cloud_logo p {
+        margin:20px 22px 22px 0px;
+    }
+    .pen_logo p {
+        margin: 13px 8px 31px 28px;
+    }
+    .pen_logo img {
+        padding-left: 17px;
+    }
+    .airplane_logo p {
+        margin: 17px -11px 31px -6px;
+    }
+    .airplane_logo img {
+        padding-right: 8px;
+    }
+
+    /*SECTION WITH SLIDE*/
+
+    .yellow_section {
+        background: none;
+    }
+    .orange_slide p {
+        padding: 12px 15px 3px 29px;
+        line-height: 34px;
+    }
+    .plus1 {
+        top: 200px; 
+    }
+     /*SECTION WITH DEVICES*/
+    
+     .section_devices {
+        min-height: 464px;
+        background-color: #474747;
+        
+     }
+     .text_in_grey_section p {
+        font-size: 39px;
+        font-family: "Open Sans";
+        margin-left: -17px;
+        padding-top: 34px;
+     }
+     .info_in_grey_section {
+        padding-top: 77px;
+        margin-left: -8px;
+     }
+     .yellowLogo {
+        top: -42px;
+        left: -30px;
+     }
+     /*FOOTER*/
+
+     .logo_footer_mobile {
+        display: block;
+    }
+     .logo_footer {
+        display: none;
+    }
+
+    }
+    
+
+
+
+
+
+
